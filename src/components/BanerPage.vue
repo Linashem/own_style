@@ -32,7 +32,7 @@
 <style lang="scss" scoped>
 .baner {
   position: relative;
-  background-image: url('./baner.jpg');
+  background-image: url('/baner.jpg');
   min-height: 100vh;
   width: 100vw;
   background-size: cover;
