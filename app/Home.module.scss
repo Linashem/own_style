@@ -1,0 +1,18 @@
+
+.header_baner {
+  background-color: black;
+  position: relative;
+  padding-bottom: 100vh;
+  .header_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+  }
+  .baner_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,27 @@
+.about_block {
+  display: flex;
+  max-width: 1200px;
+  margin: 100px 0;
+}
+.about_img {
+  height: 600px;
+  width: 100%;
+  background: gray;
+}
+.about_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .about_block {
+    flex-direction: column;
+  }
+  .about_img {
+    height: 400px;
+  }
+}
