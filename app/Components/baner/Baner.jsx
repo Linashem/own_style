@@ -1,11 +1,16 @@
+'use client'
 import style from "./Baner.module.scss";
 
 const Baner = () => {
+  const screenHeight = window.innerHeight ;
+  console.log(screenHeight);
   return (
-    <div className={style.baner}>
+    <div className={style.baner} 
+    style={{height:screenHeight}} 
+    >
       <div className={style.baner_text}>
-        <h2>Школа шитья</h2>
-        <h1 className={style.baner_title}>Свой Стиль</h1>
+        <h1 className={style.baner_title}>СВОЙ СТИЛЬ</h1>
+        <h2 className={style.baner_desc}>ШКОЛА ШИТЬЯ</h2>
       </div>
       <div className={style.baner_arrow}>
         <a href='#about'>
@@ -30,3 +35,4 @@ const Baner = () => {
 };
 
 export default Baner;
+
