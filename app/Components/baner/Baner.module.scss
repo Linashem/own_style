@@ -22,6 +22,9 @@
   border-bottom: 1px solid white;
   font-weight: 400;
   font-family: var(--font-cormorant);
+
+  opacity: 0;
+  animation: text 4s forwards;
 }
 
 .baner_title {
@@ -63,6 +66,23 @@
   }
   100% {
     top: 91%;
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    
+  }
+  20%{
+    opacity: 0;
+    
+  }
+  // 50%{
+  //   opacity: 0.2;
+  // }
+  100% {
+    opacity: 1;
   }
 }
 
