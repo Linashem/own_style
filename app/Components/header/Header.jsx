@@ -14,9 +14,7 @@ const Header = () => {
     <header className={style.header}>
       <nav className={style.header_nav}>
         <div className={style.header_line}>
-          {/* <div>
-            <Image src='./logo.svg' alt='свой стиль' width={40} height={70} />
-          </div> */}
+          
 
           <div className={style.logo}>
             <Image src='./logo.svg' alt='свой стиль' width={40} height={70} />

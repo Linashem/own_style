@@ -58,6 +58,7 @@
     gap: 5px;
     border: none;
     background-color: black;
+    z-index: 100;
     .burger_item {
       width: 28px;
       height: 3px;
@@ -75,11 +76,16 @@
       display: none;
     }
     .header_line {
+      position: relative;
       height: 65px;
       width: 100%;
       background-color: black;
     }
     .active {
+      position: absolute;
+      top: 0;
+      right: 0;
+      // margin-top: 300px;
       display: flex;
       flex-direction: column;
       padding: 50px;
