@@ -23,7 +23,6 @@ const Baner = () => {
           <svg
             className={style.baner_arrow_svg}
             role='presentation'
-            class='t-cover__arrow-svg'
             x='0px'
             y='0px'
             width='38.417px'

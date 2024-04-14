@@ -19,7 +19,7 @@ const Header = () => {
             <span className={style.burger_item}></span>
           </button>
 
-          <ul className={isActive && style.active}>
+          <ul className={isActive ? style.active: style.notactive}>
             <li className={style.header_item}>
               <a href=''>О нас</a>
             </li>
