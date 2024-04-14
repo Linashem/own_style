@@ -1,13 +1,19 @@
-'use client'
+"use client";
+import { useEffect, useState } from "react";
 import style from "./Baner.module.scss";
 
 const Baner = () => {
-  const screenHeight = window.innerHeight ;
-  console.log(screenHeight);
+  const [height, setHeight]= useState()
+  useEffect(() => {
+    let screenHeight = "10vh";
+    if (typeof window !== "undefined") {
+      screenHeight = window.innerHeight;
+      setHeight(screenHeight)
+    }
+  }, []);
+
   return (
-    <div className={style.baner} 
-    style={{height:screenHeight}} 
-    >
+    <div className={style.baner} style={{ height: height }}>
       <div className={style.baner_text}>
         <h1 className={style.baner_title}>СВОЙ СТИЛЬ</h1>
         <h2 className={style.baner_desc}>ШКОЛА ШИТЬЯ</h2>
@@ -35,4 +41,3 @@ const Baner = () => {
 };
 
 export default Baner;
-
