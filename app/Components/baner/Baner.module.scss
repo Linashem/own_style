@@ -24,7 +24,7 @@
   font-family: var(--font-cormorant);
   opacity: 0;
   background-color: black;
-  animation: text 7s forwards;
+  animation: text 5s forwards;
 }
 
 .baner_title {
@@ -39,7 +39,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  animation: baner 7s forwards;
+  animation: baner 5s forwards;
   // background-image: url("/thingsback.png");
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -64,7 +64,7 @@
   background-image: url("/thingsback.png");
   background-repeat: no-repeat;
   background-size: cover;
-  animation: things 20s forwards;
+  animation: things 10s forwards;
   z-index: 3;
   background-color: black;
   
