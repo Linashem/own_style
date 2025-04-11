@@ -22,9 +22,9 @@
   border-bottom: 1px solid white;
   font-weight: 400;
   font-family: var(--font-cormorant);
-
   opacity: 0;
-  animation: text 4s forwards;
+  background-color: black;
+  animation: text 7s forwards;
 }
 
 .baner_title {
@@ -39,13 +39,36 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.4)
-  );
+  animation: baner 7s forwards;
+  // background-image: url("/thingsback.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // animation: things 20s forwards;
+  // background-image: -webkit-linear-gradient(
+  //   top,
+  //   rgba(0, 0, 0, 0.5),
+  //   rgba(0, 0, 0, 0.75),
+  //   rgba(0, 0, 0, 0.4)
+  // );
+
+  background: black;
   z-index: 2;
+}
+.baner2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/thingsback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: things 20s forwards;
+  z-index: 3;
+  background-color: black;
+  
+
 }
 
 .baner_arrow {
@@ -53,7 +76,7 @@
   left: 50%;
   transform: translateX(-50%);
   animation-name: arrow-bottom;
-  animation-duration: 1100ms;
+  animation-duration: 2100ms;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-direction: alternate-reverse;
@@ -72,17 +95,37 @@
 @keyframes text {
   0% {
     opacity: 0;
-    
   }
-  20%{
+  20% {
     opacity: 0;
-    
   }
-  // 50%{
-  //   opacity: 0.2;
-  // }
   100% {
     opacity: 1;
+    background-color: black;
+  }
+}
+
+@keyframes baner {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes things {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.3;
   }
 }
 
