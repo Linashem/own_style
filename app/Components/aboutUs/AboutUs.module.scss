@@ -6,7 +6,10 @@
 .about_img {
   height: 600px;
   width: 100%;
-  background: gray;
+  // background: gray;
+  background-image:  url("/about_us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about_text {
   display: flex;

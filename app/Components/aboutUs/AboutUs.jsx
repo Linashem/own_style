@@ -5,9 +5,10 @@ const AboutUs = () => {
     <div id='about' className={style.about_block}>
       <div className={style.about_img}></div>
       <div className={style.about_text}>
-        <h2 className={style.title}>Lorem, ipsum dolor.</h2>
-        <p className={style.desc}>Lorem ipsum dolor sit amet.</p>
+        <h2 className={style.title}>Здравствуйте</h2>
+        <p className={style.desc}>меня зовут Алла</p>
         <p>
+          Здесь будет написан любой текст приветствия 
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ullam,
           consequatur incidunt laudantium maiores assumenda, exercitationem
           debitis libero, eos voluptatum alias temporibus laborum quod vero
